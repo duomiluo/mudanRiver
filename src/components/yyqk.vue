@@ -102,7 +102,7 @@ export default {
       getlist:{},
       labelPosition: "left",
       formLabelAlign: {
-        name: "",
+        name: "ddd",
         region: "",
         type: "",
         Number: "",
