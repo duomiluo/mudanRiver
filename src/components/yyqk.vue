@@ -99,7 +99,7 @@ var api = "/service/dailyReportService";
 export default {
   data() {
     return {
-      getlist:{},
+      getlist: {},
       labelPosition: "left",
       formLabelAlign: {
         name: "ddd",
@@ -127,10 +127,9 @@ export default {
       this.axios.post(api).then(response => {
         if (response.data.code === 0) {
           const resp = response.data.data;
-          console.log('11',resp);
+          console.log("11", resp);
           this.getlist = resp;
           this.formLabelAlign.name = resp.dayCyrs;
-
         }
       });
     },
@@ -141,7 +140,7 @@ export default {
       this.formLabelAlign.name = this.getlist.dayCyrs;
     },
     year() {
-       this.formLabelAlign.name = this.getlist.dayCyrs;
+      this.formLabelAlign.name = this.getlist.dayCyrs;
     }
   },
   created() {
